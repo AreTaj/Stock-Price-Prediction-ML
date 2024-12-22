@@ -1,0 +1,6 @@
+/.venv
+/__pycache__
+/feature_engineering.py
+/model_selection.py
+/model_training_and_evaluation.py
+/visualization.py
