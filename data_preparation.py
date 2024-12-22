@@ -18,6 +18,9 @@ def prepare_data(data):
   # Handle missing values (if any)
   data = data.ffill()
 
+  # Check type of date column
+  print(f"Date column type:{data['Date']}")# = pd.to_datetime(data['Date'])
+
   # Check for missing values after filling
   missing_values = data.isnull().sum()
   print(f"Number of missing values after filling: {missing_values.sum()}")
